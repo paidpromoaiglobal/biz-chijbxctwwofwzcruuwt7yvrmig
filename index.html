@@ -91,9 +91,8 @@ section{padding:72px 5vw}
 .ps-inner h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
 .ps-inner p{opacity:.82;max-width:480px;margin:0 auto 28px;font-size:.96rem;line-height:1.65}
 /* GALLERY */
-.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
-.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;transition:transform .3s,opacity .3s}
+.gallery-grid{display:flex;justify-content:center}
+.gallery-grid img{width:100%;max-width:720px;aspect-ratio:4/3;object-fit:cover;border-radius:12px;transition:transform .3s,opacity .3s}
 .gallery-grid img:hover{transform:scale(1.03);opacity:.9}
 /* REVIEWS */
 .rv-bg{background:#0f172a}
@@ -189,7 +188,7 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
   </div>
 </div>
 
-<section><div class="container"><div class="sec-center" data-r><p class="sec-eyebrow">Gallery</p><h2 class="sec-h2">A Look Inside</h2></div><div class="gallery-grid"><img src="./img/photo-0.jpg" alt="Chilbili" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-1.jpg" alt="Chilbili" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-2.jpg" alt="Chilbili" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-3.jpg" alt="Chilbili" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-4.jpg" alt="Chilbili" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85&fit=crop&auto=format'"></div></div></section>
+<section><div class="container"><div class="sec-center" data-r><p class="sec-eyebrow">Gallery</p><h2 class="sec-h2">A Look Inside</h2></div><div class="gallery-grid"><img src="./img/photo-0.jpg" alt="Chilbili" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=85&fit=crop&auto=format'"></div></div></section>
 
 <section class="rv-bg">
   <div class="container">
